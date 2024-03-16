@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Galeria</title>
+    <style>
+      body {
+        background-color: chocolate;
+      }
+      h1 {
+        color: #07dcd9;
+        text-align: center;
+        font-style: italic;
+        font-weight: 900;
+        font-family: Arial, sans-serif; /* Cambia la fuente del texto */
+        text-shadow: 2px 2px 4px #000000; /* Añade una sombra al texto */
+      }
+
+      .kodfun-galeri,
+      .kodfun-clip {
+        display: flex;
+        height: 20rem;
+        gap: 1rem;
+      }
+      .kodfun-galeri > div,
+      .kodfun-clip > div {
+        flex: 1;
+        border-radius: 1rem;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: auto 100%;
+        transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+      }
+      .kodfun-galeri > div:hover,
+      .kodfun-clip > div:hover {
+        flex: 5;
+      }
+      .kodfun-clip video {
+        width: 100%;
+        height: 100%;
+        border-radius: 1rem;
+        transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+      }
+      .kodfun-clip > div:hover video {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>GALERIA</h1>
+    <div class="kodfun-galeri">
+      <div style="background-image: url('galeria1.jpg')"></div>
+      <div style="background-image: url('galeria2.jpg')"></div>
+      <div style="background-image: url('galeria3.jpg')"></div>
+      <div style="background-image: url('galeria4.jpg')"></div>
+      <div style="background-image: url('galeria5.jpg')"></div>
+      <div style="background-image: url('galeria6.jpg')"></div>
+      <div style="background-image: url('galeria7.jpg')"></div>
+    </div>
+    <h1>Videos</h1>
+    <div class="kodfun-clip">
+      <div>
+        <video src="videogaleria1.mp4" controls></video>
+      </div>
+      <div>
+        <video src="videogaleria2.mp4" controls></video>
+      </div>
+      <div>
+        <video src="videogaleria3.mp4" controls></video>
+      </div>
+    </div>
+  </body>
+</html>
